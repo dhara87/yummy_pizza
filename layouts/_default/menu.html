@@ -1,0 +1,376 @@
+{{ define "main" }}
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h2 class="mb-4">Our Menu</h2>
+                <p>{{ .Params.menu_content }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-wrap">
+        <div class="row no-gutters d-flex">
+            <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                    <a href="#" class="img" style="background-image: url('{{ .Params.pizza1_image_url}}');"></a>
+                    <div class="text p-4">
+                        <h3>{{ .Params.pizza1_name }}</h3>
+                        <p>{{ .Params.pizza1_content }} </p>
+                        <p class="price"><span>{{ .Params.pizza1_price }}</span> <a href="#"
+                                class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                  <a href="#" class="img" style="background-image: url('{{ .Params.pizza2_image_url}}');"></a>
+                  <div class="text p-4">
+                    <h3>{{ .Params.pizza2_name }}</h3>
+                    <p>{{ .Params.pizza2_content }}</p>
+                    <p class="price"><span>{{ .Params.pizza2_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                  <a href="#" class="img" style="background-image: url('{{ .Params.pizza3_image_url}}');"></a>
+                  <div class="text p-4">
+                    <h3>{{ .Params.pizza3_name }}</h3>
+                    <p>{{ .Params.pizza3_content }}</p>
+                    <p class="price"><span>{{ .Params.pizza3_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                  <a href="#" class="img order-lg-last" style="background-image: url('{{ .Params.pizza4_image_url}}');"></a>
+                  <div class="text p-4">
+                    <h3>{{ .Params.pizza4_name }}</h3>
+                    <p>{{ .Params.pizza4_content }}</p>
+                    <p class="price"><span>{{ .Params.pizza4_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                  <a href="#" class="img order-lg-last" style="background-image: url('{{ .Params.pizza5_image_url}}');"></a>
+                  <div class="text p-4">
+                    <h3>{{ .Params.pizza5_name }}</h3>
+                    <p>{{ .Params.pizza5_content }}</p>
+                    <p class="price"><span>{{ .Params.pizza5_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex ftco-animate">
+                <div class="services-wrap d-flex">
+                  <a href="#" class="img order-lg-last" style="background-image: url('{{ .Params.pizza6_image_url}}');"></a>
+                  <div class="text p-4">
+                    <h3>{{ .Params.pizza6_name }}</h3>
+                    <p>{{ .Params.pizza6_content }}</p>
+                    <p class="price"><span>{{ .Params.pizza6_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="container">
+            <div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
+              <div class="col-md-7 heading-section text-center ftco-animate">
+                <h2 class="mb-4">{{ .Params.menu_pricing_title }}</h2>
+                <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+                <p class="mt-5">{{ .Params.menu_pricing_content }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item1_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item1_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item1_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item1_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item2_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item2_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item2_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item2_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item3_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item3_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item3_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item3_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item4_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item4_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item4_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item4_content }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-6">
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item5_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item5_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item5_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item5_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item6_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item6_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item6_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item6_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item7_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3><span>{{ .Params.menu_item7_name }}</span></h3>
+                      <span class="price">{{ .Params.menu_item7_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item7_content }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                  <div class="img" style="background-image: url('{{ .Params.menu_item8_image_url}}');"></div>
+                  <div class="desc pl-3">
+                    <div class="d-flex text align-items-center">
+                      <h3>{{ .Params.menu_item8_name }}</h3>
+                      <span class="price">{{ .Params.menu_item8_price }}</span>
+                    </div>
+                    <div class="d-block">
+                      <p>{{ .Params.menu_item8_content }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ftco-menu">
+            <div class="container-fluid">
+              <div class="row d-md-flex">
+                <div class="col-lg-4 ftco-animate img f-menu-img mb-5 mb-md-0" style="background-image: url('{{ .Params.menu_image_url}}');">
+                </div>
+                <div class="col-lg-8 ftco-animate p-md-5">
+                  <div class="row">
+                    <div class="col-md-12 nav-link-wrap mb-5">
+                      <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">{{ .Params.menu_filter_1 }}</a>
+          
+                        <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">{{ .Params.menu_filter_2 }}</a>
+          
+                        <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">{{ .Params.menu_filter_3 }}</a>
+          
+                        <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">{{ .Params.menu_filter_4 }}</a>
+                      </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center">
+                      
+                      <div class="tab-content ftco-animate" id="v-pills-tabContent">
+          
+                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                          <div class="row">
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pizza_1_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pizza_1_name }}</a></h3>
+                                  <p>{{ .Params.pizza_1_content }}</p>
+                                  <p class="price"><span>{{ .Params.pizza_1_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pizza_2_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pizza_2_name }}</a></h3>
+                                  <p>{{ .Params.pizza_2_content }}</p>
+                                  <p class="price"><span>{{ .Params.pizza_2_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pizza_3_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pizza_3_name }}</a></h3>
+                                  <p>{{ .Params.pizza_3_content }}</p>
+                                  <p class="price"><span>{{ .Params.pizza_3_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                          <div class="row">
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.drink_1_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.drink_1_name }}</a></h3>
+                                  <p>{{ .Params.drink_1_content }}</p>
+                                  <p class="price"><span>{{ .Params.drink_1_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.drink_2_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.drink_2_name }}</a></h3>
+                                  <p>{{ .Params.drink_2_content }}</p>
+                                  <p class="price"><span>{{ .Params.drink_2_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.drink_3_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.drink_3_name }}</a></h3>
+                                  <p>{{ .Params.drink_3_content }}</p>
+                                  <p class="price"><span>{{ .Params.drink_3_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                          <div class="row">
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.burger_1_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.burger_1_name }}</a></h3>
+                                  <p>{{ .Params.burger_1_content }}</p>
+                                  <p class="price"><span>{{ .Params.burger_1_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.burger_2_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.burger_2_name }}</a></h3>
+                                  <p>{{ .Params.burger_2_content }}</p>
+                                  <p class="price"><span>{{ .Params.burger_2_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.burger_3_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.burger_3_name }}</a></h3>
+                                  <p>{{ .Params.burger_3_content }}</p>
+                                  <p class="price"><span>{{ .Params.burger_3_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                          <div class="row">
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pasta_1_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pasta_1_name }}</a></h3>
+                                  <p>{{ .Params.pasta_1_content }}</p>
+                                  <p class="price"><span>{{ .Params.pasta_1_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pasta_2_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pasta_2_name }}</a></h3>
+                                  <p>{{ .Params.pasta_2_content }}</p>
+                                  <p class="price"><span>{{ .Params.pasta_2_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                              <div class="menu-wrap">
+                                <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.pasta_3_image}}');"></a>
+                                <div class="text">
+                                  <h3><a href="#">{{ .Params.pasta_3_name }}</a></h3>
+                                  <p>{{ .Params.pasta_3_content }}</p>
+                                  <p class="price"><span>{{ .Params.pasta_3_price }}</span></p>
+                                  <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+
+{{ end }}
