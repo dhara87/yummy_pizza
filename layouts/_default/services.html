@@ -1,105 +1,31 @@
 {{ define "main" }}
 <section class="ftco-section ftco-services">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">{{ .Params.services_title }}</h2>
-          <p>{{ .Params.services_content }}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 ftco-animate">
-          <div class="media d-block text-center block-6 services">
-            <div class="icon d-flex justify-content-center align-items-center mb-5">
-              <span class="flaticon-diet"></span>
-            </div>
-            <div class="media-body">
-              <h3 class="heading">{{ .Params.service1_heading }}</h3>
-              <p>{{ .Params.service1_content }}</p>
-            </div>
-          </div>      
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="media d-block text-center block-6 services">
-            <div class="icon d-flex justify-content-center align-items-center mb-5">
-              <span class="flaticon-bicycle"></span>
-            </div>
-            <div class="media-body">
-              <h3 class="heading">{{ .Params.service2_heading }}</h3>
-              <p>{{ .Params.service2_content }}</p>
-            </div>
-          </div>      
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="media d-block text-center block-6 services">
-            <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-pizza-1"></span></div>
-            <div class="media-body">
-              <h3 class="heading">{{ .Params.service3_heading }}</h3>
-              <p>{{ .Params.service3_content }}</p>
-            </div>
-          </div>    
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.meal_title }}</h2>
-        <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-        <p class="mt-5">{{ .Params.meal_content }}</p>
+        <h2 class="mb-4">{{ .Params.services_title }}</h2>
+        <p>{{ .Params.services_content }}</p>
       </div>
     </div>
-        <div class="row">
-            <div class="col-md-3 text-center ftco-animate">
-              <div class="menu-wrap">
-                  <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.meal1_image_url}}');"></a>
-                  <div class="text">
-                      <h3><a href="#">{{ .Params.meal1_name }}</a></h3>
-                      <p>{{ .Params.meal1_content }}</p>
-                      <p class="price"><span>{{ .Params.meal1_price }}</span></p>
-                      <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
-                  </div>
-              </div>
+    <div class="row">
+      {{ range where .Site.Pages "Type" "service" }}
+      <div class="col-md-4 ftco-animate">
+        <div class="media d-block text-center block-6 services">
+          <div class="icon d-flex justify-content-center align-items-center mb-5">
+            <span class="{{.Params.icon_css_class}}"></span>
           </div>
-          <div class="col-md-3 text-center ftco-animate">
-              <div class="menu-wrap">
-                  <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.meal2_image_url}}');"></a>
-                  <div class="text">
-                      <h3><a href="#">{{ .Params.meal2_name }}</a></h3>
-                      <p>{{ .Params.meal2_content }}</p>
-                      <p class="price"><span>{{ .Params.meal2_price }}</span></p>
-                      <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3 text-center ftco-animate">
-              <div class="menu-wrap">
-                  <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.meal3_image_url}}');"></a>
-                  <div class="text">
-                      <h3><a href="#">{{ .Params.meal3_name }}</a></h3>
-                      <p>{{ .Params.meal3_content }}</p>
-                      <p class="price"><span>{{ .Params.meal3_price }}</span></p>
-                      <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3 text-center ftco-animate">
-              <div class="menu-wrap">
-                  <a href="#" class="menu-img img mb-4" style="background-image: url('{{ .Params.meal4_image_url}}');"></a>
-                  <div class="text">
-                      <h3><a href="#">{{ .Params.meal4_name }}</a></h3>
-                      <p>{{ .Params.meal4_content }}</p>
-                      <p class="price"><span>{{ .Params.meal4_price }}</span></p>
-                      <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
-                  </div>
-              </div>
+          <div class="media-body">
+            <h3 class="heading">{{ .Params.service_heading }}</h3>
+            <p>{{ .Params.service_content }}</p>
           </div>
         </div>
+      </div>
+      {{end}}
     </div>
+  </div>
 </section>
+
+
+
 {{ end }}
