@@ -3,225 +3,190 @@ backend:
   branch: master
 media_folder: "static/images"
 collections:
-  - name: "index" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "index" # Used in the UI, ie.: "New Post"
-    folder: "content/english" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-   
-    # slider
-      # slide 1
-      - { label: "Slider 1 Heading", name: "slider1_heading", widget: "string" }
-      - { label: "Slider 1 Title", name: "slider1_title", widget: "string" }
-      - { label: "Slider 1 Content", name: "slider1_content", widget: "text" }
-      - { label: "Slider 1 Image URL", name: "slider1_image_url", widget: "image" }
-      # slide 2
-      - { label: "Slider 2 Heading", name: "slider2_heading", widget: "string" }
-      - { label: "Slider 2 Title", name: "slider2_title", widget: "string" }
-      - { label: "Slider 2 Content", name: "slider2_content", widget: "text" }
-      - { label: "Slider 2 Image URL", name: "slider2_image_url", widget: "image" }
-      # slide 3
-      - { label: "Slider 3 Heading", name: "slider3_heading", widget: "string" }
-      - { label: "Slider 3 Title", name: "slider3_title", widget: "string" }
+  - name: "Home Page" 
+    label: "Home Page"
+    folder: "content/english"
+    create: false
+    fields:
+      - { label: "Home Title", name: "title", widget: "string" }
+      - { label: "Home Slider 3 Heading", name: "slider3_heading", widget: "string" }
+      - { label: "Home Slider 3 Title", name: "slider3_title", widget: "string" }
       - { label: "Slider 3 Content", name: "slider3_content", widget: "text" }
-      - { label: "Slider 3 Image URL", name: "slider3_image_url", widget: "image" }
-
-    # about section
       - { label: "About Image URL", name: "about_image_url", widget: "image" }
+      - { label: "Home Content", name: "about_content", widget: "text" }
+      - { label: "Menu Image URL", name: "menu_image_url", widget: "image" }
+      - { label: "Menu Filter 1", name: "menu_filter_1", widget: "string" }
+      - { label: "Menu Filter 2", name: "menu_filter_2", widget: "string" }
+      - { label: "Menu Filter 3", name: "menu_filter_3", widget: "string" }
+      - { label: "Menu Filter 4", name: "menu_filter_4", widget: "string" }
+
+  - name: "About Section" 
+    label: "About Section"
+    folder: "content/english/about"
+    create: false
+    fields:
+      - { label: "About Title", name: "title", widget: "string" }
+      - { label: "About Profile", name: "subtitle", widget: "string" }
+      - { label: "About URL Text", name: "url", widget: "string" }
+      - { label: "About Image", name: "page_header_bg", widget: "image" }
+      - { label: "About Meta Description", name: "description", widget: "text" }
       - { label: "About Content", name: "about_content", widget: "text" }
+      - { label: "About Background Image", name: "about_bg_image", widget: "image" }
+      - { label: "Our Chef Title", name: "our_chef_title", widget: "string" }
+      - { label: "Our Chef Content", name: "our_chef_content", widget: "text" }
+      - { label: "Layout", name: "layout", widget: "string" }
 
-    # service section
-      - { label: "Service Title", name: "services_title", widget: "string" }
-      - { label: "Service Content", name: "services_content", widget: "text" }
-      # service 1
-      - { label: "Service 1 Heading", name: "service1_heading", widget: "string" }
-      - { label: "Service 1 Content", name: "service1_content", widget: "text" }
-      # service 2
-      - { label: "Service 2 Heading", name: "service2_heading", widget: "string" }
-      - { label: "Service 2 Content", name: "service2_content", widget: "text" }
-      # service 3
-      - { label: "Service 3 Heading", name: "service3_heading", widget: "string" }
-      - { label: "Service 3 Content", name: "service3_content", widget: "text" }
+  - name: "Chef Section" 
+    label: "Chef"
+    folder: "content/english/about/our-chef"
+    create: true
+    fields:
+      - { label: "Chef Name", name: "title", widget: "string" }
+      - { label: "Chef Profile", name: "chef_profile", widget: "string" }
+      - { label: "Chef Image", name: "chef_image_url", widget: "image" }
+      - { label: "Chef Content", name: "chef_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
 
-    # pizza section
-      - { label: "Pizza Meal Title", name: "pizza_meal_title", widget: "string" }
-      - { label: "Pizza Meal Content", name: "pizza_meal_content", widget: "text" }
+  - name: "Blogs" 
+    label: "Blogs"
+    folder: "content/english/blogs"
+    create: true
+    fields:
+      - { label: "Blog Title", name: "title", widget: "string" }
+      - { label: "Blog Slug", name: "slug", widget: "string" }
+      - { label: "Blog Date", name: "blog_date", widget: "datetime" }
+      - { label: "Blog Image", name: "blog_image_url", widget: "image" }
+      - { label: "Blog Title", name: "blog_title", widget: "string" }
+      - { label: "Blog Summery", name: "blog_summary", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
 
-      # pizza 1
-      - { label: "Pizza 1 Image URL", name: "pizza1_image_url", widget: "image" }
-      - { label: "Pizza 1 Name", name: "pizza1_name", widget: "string" }
-      - { label: "Pizza 1 Content", name: "pizza1_content", widget: "text" }
-      - { label: "Pizza 1 Price", name: "pizza1_price", widget: "string" }
-
-      # pizza 2
-      - { label: "Pizza 2 Image URL", name: "pizza2_image_url", widget: "image" }
-      - { label: "Pizza 2 Name", name: "pizza2_name", widget: "string" }
-      - { label: "Pizza 2 Content", name: "pizza2_content", widget: "text" }
-      - { label: "Pizza 2 Price", name: "pizza2_price", widget: "string" }
-
-      # pizza 3
-      - { label: "Pizza 3 Image URL", name: "pizza3_image_url", widget: "image" }
-      - { label: "Pizza 3 Name", name: "pizza3_name", widget: "string" }
-      - { label: "Pizza 3 Content", name: "pizza3_content", widget: "text" }
-      - { label: "Pizza 3 Price", name: "pizza3_price", widget: "string" }
-
-      # pizza 4
-      - { label: "Pizza 4 Image URL", name: "pizza4_image_url", widget: "image" }
-      - { label: "Pizza 4 Name", name: "pizza4_name", widget: "string" }
-      - { label: "Pizza 4 Content", name: "pizza4_content", widget: "text" }
-      - { label: "Pizza 4 Price", name: "pizza4_price", widget: "string" }
-
-      # pizza 5
-      - { label: "Pizza 5 Image URL", name: "pizza5_image_url", widget: "image" }
-      - { label: "Pizza 5 Name", name: "pizza5_name", widget: "string" }
-      - { label: "Pizza 5 Content", name: "pizza5_content", widget: "text" }
-      - { label: "Pizza 5 Price", name: "pizza5_price", widget: "string" }
-
-      # pizza 6
-      - { label: "Pizza 6 Image URL", name: "pizza6_image_url", widget: "image" }
-      - { label: "Pizza 6 Name", name: "pizza6_name", widget: "string" }
-      - { label: "Pizza 6 Content", name: "pizza6_content", widget: "text" }
-      - { label: "Pizza 6 Price", name: "pizza6_price", widget: "string" }
-
-    # menu section
-      - { label: "Menu Pricing Title", name: "menu_pricing_title", widget: "string" }
-      - { label: "Menu Pricing Content", name: "menu_pricing_content", widget: "text" }
-
-      # item 1
-      - { label: "Item 1 Image URL", name: "menu_item1_image_url", widget: "image" }
-      - { label: "Item 1 Name", name: "menu_item1_name", widget: "string" }
-      - { label: "Item 1 Content", name: "menu_item1_content", widget: "text" }
-      - { label: "Item 1 Price", name: "menu_item1_price", widget: "string" }
-
-      # item 2
-      - { label: "Item 2 Image URL", name: "menu_item2_image_url", widget: "image" }
-      - { label: "Item 2 Name", name: "menu_item2_name", widget: "string" }
-      - { label: "Item 2 Content", name: "menu_item2_content", widget: "text" }
-      - { label: "Item 2 Price", name: "menu_item2_price", widget: "string" }
-
-      # item 3
-      - { label: "Item 3 Image URL", name: "menu_item3_image_url", widget: "image" }
-      - { label: "Item 3 Name", name: "menu_item3_name", widget: "string" }
-      - { label: "Item 3 Content", name: "menu_item3_content", widget: "text" }
-      - { label: "Item 3 Price", name: "menu_item3_price", widget: "string" }
-
-      # item 4
-      - { label: "Item 4 Image URL", name: "menu_item4_image_url", widget: "image" }
-      - { label: "Item 4 Name", name: "menu_item4_name", widget: "string" }
-      - { label: "Item 4 Content", name: "menu_item4_content", widget: "text" }
-      - { label: "Item 4 Price", name: "menu_item4_price", widget: "string" }
-
-      # item 5
-      - { label: "Item 5 Image URL", name: "menu_item5_image_url", widget: "image" }
-      - { label: "Item 5 Name", name: "menu_item5_name", widget: "string" }
-      - { label: "Item 5 Content", name: "menu_item5_content", widget: "text" }
-      - { label: "Item 5 Price", name: "menu_item5_price", widget: "string" }
-
-      # item 6
-      - { label: "Item 6 Image URL", name: "menu_item6_image_url", widget: "image" }
-      - { label: "Item 6 Name", name: "menu_item6_name", widget: "string" }
-      - { label: "Item 6 Content", name: "menu_item6_content", widget: "text" }
-      - { label: "Item 6 Price", name: "menu_item6_price", widget: "string" }
-
-      # item 7
-      - { label: "Item 7 Image URL", name: "menu_item7_image_url", widget: "image" }
-      - { label: "Item 7 Name", name: "menu_item7_name", widget: "string" }
-      - { label: "Item 7 Content", name: "menu_item7_content", widget: "text" }
-      - { label: "Item 7 Price", name: "menu_item7_price", widget: "string" }
-
-      # item 8
-      - { label: "Item 8 Image URL", name: "menu_item8_image_url", widget: "image" }
-      - { label: "Item 8 Name", name: "menu_item8_name", widget: "string" }
-      - { label: "Item 8 Content", name: "menu_item8_content", widget: "text" }
-      - { label: "Item 8 Price", name: "menu_item8_price", widget: "string" }
-
-    # gallery Section
-      - { label: "Gallery Image 1 URL", name: "gallery_image1_url", widget: "image" }
-      - { label: "Gallery Image 2 URL", name: "gallery_image2_url", widget: "image" }
-      - { label: "Gallery Image 3 URL", name: "gallery_image3_url", widget: "image" }
-      - { label: "Gallery Image 4 URL", name: "gallery_image4_url", widget: "image" }
-
-    # menu filter
-      - { label: "Menu Filter 1 Title", name: "menu_filter_1", widget: "string" }
-      - { label: "Menu Filter 2 Title", name: "menu_filter_2", widget: "string" }
-      - { label: "Menu Filter 3 Title", name: "menu_filter_3", widget: "string" }
-      - { label: "Menu Filter 4 Title", name: "menu_filter_4", widget: "string" }
-
-      # Pizza 1
-      - { label: "Pizza 1 Image URL (Filter Section)", name: "pizza_1_image", widget: "image" }
-      - { label: "Pizza 1 Name", name: "pizza_1_name", widget: "string" }
-      - { label: "Pizza 1 Content", name: "pizza_1_content", widget: "text" }
-      - { label: "Pizza 1 Price", name: "pizza_1_price", widget: "string" }
-
-      # pizza 2
-      - { label: "Pizza 2 Image URL (Filter Section)", name: "pizza_2_image", widget: "image" }
-      - { label: "Pizza 2 Name", name: "pizza_2_name", widget: "string" }
-      - { label: "Pizza 2 Content", name: "pizza_2_content", widget: "text" }
-      - { label: "Pizza 2 Price", name: "pizza_2_price", widget: "string" }
-
-      #  Pizza 3
-      - { label: "Pizza 3 Image URL (Filter Section)", name: "pizza_3_image", widget: "image" }
-      - { label: "Pizza 3 Name", name: "pizza_3_name", widget: "string" }
-      - { label: "Pizza 3 Content", name: "pizza_3_content", widget: "text" }
-      - { label: "Pizza 3 Price", name: "pizza_3_price", widget: "string" }
-
-    # drink section
-      # drink 1
-      - { label: "Drink 1 Image URL", name: "drink_1_image", widget: "image" }
-      - { label: "Drink 1 Name", name: "drink_1_name", widget: "string" }
-      - { label: "Drink 1 Content", name: "drink_1_content", widget: "text" }
-      - { label: "Drink 1 Price", name: "drink_1_price", widget: "string" }
-
-      # drink 2
-      - { label: "Drink 2 Image URL", name: "drink_2_image", widget: "image" }
-      - { label: "Drink 2 Name", name: "drink_2_name", widget: "string" }
-      - { label: "Drink 2 Content", name: "drink_2_content", widget: "text" }
-      - { label: "Drink 2 Price", name: "drink_2_price", widget: "string" }
-
-      # drink 3
-      - { label: "Drink 3 Image URL", name: "drink_3_image", widget: "image" }
-      - { label: "Drink 3 Name", name: "drink_3_name", widget: "string" }
-      - { label: "Drink 3 Content", name: "drink_3_content", widget: "text" }
-      - { label: "Drink 3 Price", name: "drink_3_price", widget: "string" }
-
-    # Burger Section
-      # Burger 1
-      - { label: "Burger 1 Image URL", name: "burger_1_image", widget: "image" }
-      - { label: "Burger 1 Name", name: "burger_1_name", widget: "string" }
-      - { label: "Burger 1 Content", name: "burger_1_content", widget: "text" }
-      - { label: "Burger 1 Price", name: "burger_1_price", widget: "string" }
-
-      # Burger 2
-      - { label: "Burger 2 Image URL", name: "burger_2_image", widget: "image" }
-      - { label: "Burger 2 Name", name: "burger_2_name", widget: "string" }
-      - { label: "Burger 2 Content", name: "burger_2_content", widget: "text" }
-      - { label: "Burger 2 Price", name: "burger_2_price", widget: "string" }
-
-      # Burger 3
-      - { label: "Burger 3 Image URL", name: "burger_3_image", widget: "image" }
-      - { label: "Burger 3 Name", name: "burger_3_name", widget: "string" }
-      - { label: "Burger 3 Content", name: "burger_3_content", widget: "text" }
-      - { label: "Burger 3 Price", name: "burger_3_price", widget: "string" }
-
-    # Pasta Section
-      # Pasta 1
-      - { label: "Pasta 1 Image URL", name: "pasta_1_image", widget: "image" }
-      - { label: "Pasta 1 Name", name: "pasta_1_name", widget: "string" }
-      - { label: "Pasta 1 Content", name: "pasta_1_content", widget: "text" }
-      - { label: "Pasta 1 Price", name: "pasta_1_price", widget: "string" }
-
-      # Pasta 2
-      - { label: "Pasta 2 Image URL", name: "pasta_2_image", widget: "image" }
-      - { label: "Pasta 2 Name", name: "pasta_2_name", widget: "string" }
-      - { label: "Pasta 2 Content", name: "pasta_2_content", widget: "text" }
-      - { label: "Pasta 2 Price", name: "pasta_2_price", widget: "string" }
-
-      # Pasta 3
-      - { label: "Pasta 3 Image URL", name: "pasta_3_image", widget: "image" }
-      - { label: "Pasta 3 Name", name: "pasta_3_name", widget: "string" }
-      - { label: "Pasta 3 Content", name: "pasta_3_content", widget: "text" }
-      - { label: "Pasta 3 Price", name: "pasta_3_price", widget: "string" }
-
-
+  - name: "Contact Section" 
+    label: "Contact"
+    folder: "Contact/english/contact"
+    create: false
+    fields:
+      - { label: "Contact Title", name: "main_title", widget: "string" }
+      - { label: "Contact Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Contact Image", name: "page_header_bg", widget: "image" }
+      - { label: "Contact URL Text", name: "url", widget: "string" }
+      - { label: "Contact Meta Description", name: "description", widget: "text" }
    
+  - name: "Counter" 
+    label: "Counter"
+    folder: "content/english/home/counter"
+    create: false
+    fields:
+      - { label: "Counter Title", name: "title", widget: "string" }
+      - { label: "Counter Count", name: "count", widget: "string" }
+      - { label: "Counter Image", name: "icon", widget: "image" }
+      - { label: "Counter Type", name: "type", widget: "string" }
    
+  - name: "Gallery" 
+    label: "Gallery"
+    folder: "content/english/home/gallery"
+    create: true
+    fields:
+      - { label: "Gallery Title", name: "title", widget: "string" }
+      - { label: "Gallery Image", name: "gallery_image_url", widget: "image" }
+      - { label: "Gallery Type", name: "type", widget: "string" }
+   
+  - name: "Slider" 
+    label: "Slider"
+    folder: "content/english/home/slider_section"
+    create: false
+    fields:
+      - { label: "Slider Main Title", name: "main_title", widget: "string" }
+      - { label: "Slider Title", name: "title", widget: "string" }
+      - { label: "Slider Heading", name: "slider_heading", widget: "string" }
+      - { label: "Slider Content", name: "slider_content", widget: "text" }
+      - { label: "Slider Image", name: "slider_image_url", widget: "image" }
+      - { label: "Slider Type", name: "type", widget: "string" }
+
+  - name: "Menu Filter Burger" 
+    label: "Menu Filter Burger"
+    folder: "content/english/menu/menu-filter/burgers-filter"
+    create: true
+    fields:
+      - { label: "Burger Name", name: "title", widget: "string" }
+      - { label: "Burger Price", name: "burger_price", widget: "string" }
+      - { label: "Burger Image", name: "burger_image", widget: "image" }
+      - { label: "Burger Description", name: "burger_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+
+  - name: "Menu Filter Drink" 
+    label: "Menu Filter Drink"
+    folder: "content/english/menu/menu-filter/drinks-filter"
+    create: true
+    fields:
+      - { label: "Drink Name", name: "title", widget: "string" }
+      - { label: "Drink Price", name: "drink_price", widget: "string" }
+      - { label: "Drink Image", name: "drink_image", widget: "image" }
+      - { label: "Drink Description", name: "drink_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+   
+  
+  - name: "Menu Filter Pasta" 
+    label: "Menu Filter Pasta"
+    folder: "content/english/menu/menu-filter/pasta-filter"
+    create: true
+    fields:
+      - { label: "Pasta Name", name: "title", widget: "string" }
+      - { label: "Pasta Price", name: "pasta_price", widget: "string" }
+      - { label: "Pasta Image", name: "pasta_image", widget: "image" }
+      - { label: "Pasta Description", name: "pasta_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+   
+  
+  - name: "Menu Filter Pizza" 
+    label: "Menu Filter Pizza"
+    folder: "content/english/menu/menu-filter/pizza-filter"
+    create: true
+    fields:
+      - { label: "Pizza Name", name: "title", widget: "string" }
+      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
+      - { label: "Pizza Image", name: "pizza_image", widget: "image" }
+      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+
+  - name: "Pizza" 
+    label: "Pizza"
+    folder: "content/english/menu/our-menu"
+    create: true
+    fields:
+      - { label: "Pizza Name", name: "title", widget: "string" }
+      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
+      - { label: "Pizza Image", name: "pizza_image_url", widget: "image" }
+      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+      
+  - name: "Menu_Items" 
+    label: "Menu_Items"
+    folder: "content/english/menu/our-menu-pricing"
+    create: true
+    fields:
+      - { label: "Menu Item Name", name: "title", widget: "string" }
+      - { label: "Menu Item Price", name: "menu_item_price", widget: "string" }
+      - { label: "Menu Item Image", name: "menu_item_image_url", widget: "image" }
+      - { label: "Menu Item Description", name: "menu_item_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+   
+  - name: "Service" 
+    label: "Service"
+    folder: "content/english/services"
+    create: true
+    fields:
+      - { label: "Service Name", name: "title", widget: "string" }
+      - { label: "Service Icon", name: "icon_css_class", widget: "image" }
+      - { label: "Service Hedaer Title", name: "main_title", widget: "string" }
+      - { label: "Service Page Header Image", name: "page_header_bg", widget: "image" }
+      - { label: "Service Description", name: "service_content", widget: "text" }
+      - { label: "Type", name: "type", widget: "string" }
+  
+  
+  
+  
+  
+   
+  
+   
+  
