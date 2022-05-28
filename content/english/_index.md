@@ -1,4 +1,5 @@
 ---
+title: "home"
 slider3_heading: "Welcome"
 slider3_title: "We cooked your desired Pizza Recipe"
 slider3_content: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
