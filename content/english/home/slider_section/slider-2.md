@@ -1,5 +1,5 @@
 ---
-title: "Slider"
+title: "Slider-2"
 slider_heading: "Crunchy"
 slider_title: "Italian Pizza"
 slider_content: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
