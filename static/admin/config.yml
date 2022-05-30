@@ -70,7 +70,7 @@ collections:
 
   - name: "Contact Section" 
     label: "Contact"
-    folder: "Contact/english/contact"
+    folder: "Content/english/contact"
     create: false
     fields:
       - { label: "Contact Title", name: "contact_title", widget: "string" }
