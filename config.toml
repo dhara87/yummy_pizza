@@ -99,7 +99,7 @@ link = "plugins/js/main.js"
 
   [[Languages.en.menu.main]]
   name = "Blog"
-  URL = "/blog"
+  URL = "/blogs"
   weight = 4
 
   [[Languages.en.menu.main]]

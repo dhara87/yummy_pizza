@@ -1,5 +1,5 @@
 ---
-title: "home"
+title: "Home"
 slider3_heading: "Welcome"
 slider3_title: "We cooked your desired Pizza Recipe"
 slider3_content: "A small river named Duden flows by their place and supplies it with the necessary regelialia."
@@ -10,10 +10,14 @@ menu_filter_1: "Pizza"
 menu_filter_2: "Drinks"
 menu_filter_3: "Burgers"
 menu_filter_4: "Pasta"
-
-
-
-
+services_heading_home: "Our Services"
+services_content_home: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+menu_title_home: "Hot Pizza Meals"
+menu_content_home: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+menu_pricing_title_home: "Our Menu Pricing"
+menu_pricing_content_home: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+blog_title_home: "Recent From Blog"
+blog_content_home: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 draft: false
 ---
 

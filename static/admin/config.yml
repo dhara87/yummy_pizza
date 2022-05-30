@@ -19,6 +19,14 @@ collections:
       - { label: "Menu Filter 2", name: "menu_filter_2", widget: "string" }
       - { label: "Menu Filter 3", name: "menu_filter_3", widget: "string" }
       - { label: "Menu Filter 4", name: "menu_filter_4", widget: "string" }
+      - { label: "Service Heading", name: "services_heading_home", widget: "string" }
+      - { label: "Service Content", name: "services_content_home", widget: "text" }
+      - { label: "Menu Title Home", name: "menu_title_home", widget: "string" }
+      - { label: "Menu Content Home", name: "menu_content_home", widget: "text" }
+      - { label: "Menu Pricing Title Home", name: "menu_pricing_title_home", widget: "string" }
+      - { label: "Menu Pricing Content Home", name: "menu_pricing_content_home", widget: "text" }
+      - { label: "Blog Title Home", name: "blog_title_home", widget: "string" }
+      - { label: "Blog Content Home", name: "blog_content_home", widget: "text" }
 
   - name: "About Section" 
     label: "About Section"
@@ -177,8 +185,6 @@ collections:
     fields:
       - { label: "Service Name", name: "title", widget: "string" }
       - { label: "Service Icon", name: "icon_css_class", widget: "image" }
-      - { label: "Service Hedaer Title", name: "main_title", widget: "string" }
-      - { label: "Service Page Header Image", name: "page_header_bg", widget: "image" }
       - { label: "Service Description", name: "service_content", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
   
