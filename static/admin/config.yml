@@ -73,10 +73,11 @@ collections:
     folder: "Contact/english/contact"
     create: false
     fields:
-      - { label: "Contact Title", name: "main_title", widget: "string" }
-      - { label: "Contact Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Contact Title", name: "contact_title", widget: "string" }
+      - { label: "Contact Address", name: "address", widget: "string" }
+      - { label: "Contact No", name: "phone", widget: "string" }
+      - { label: "Contact Email", name: "email", widget: "string" }
       - { label: "Contact Image", name: "page_header_bg", widget: "image" }
-      - { label: "Contact URL Text", name: "url", widget: "string" }
       - { label: "Contact Meta Description", name: "description", widget: "text" }
    
   - name: "Counter" 
