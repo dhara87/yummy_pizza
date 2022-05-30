@@ -2,7 +2,7 @@
 title: "Contact Us"
 subtitle: "contact"
 url: "contact"
-contact_title: "Contact Information"
+contact_heading: "Contact Information"
 address: "198 West 21th Street, Suite 721 New York NY 10016"
 phone: "+1234567920"
 email: "info@yoursite.com"
