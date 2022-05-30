@@ -177,7 +177,7 @@
 <section class="ftco-gallery">
   <div class="container-wrap">
     <div class="row no-gutters">
-      {{ range first 5 (where .Site.Pages "Type" "gallery")  }}
+      {{ range first 6 (where .Site.Pages "Type" "gallery")  }}
       <div class="col-md-3 ftco-animate">
         <a href="#" class="gallery img d-flex align-items-center" style="background-image: url('{{ .Params.gallery_image_url}}');">
           <div class="icon mb-4 d-flex align-items-center justify-content-center">
