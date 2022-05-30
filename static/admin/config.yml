@@ -73,7 +73,7 @@ collections:
     folder: "Content/english/contact"
     create: false
     fields:
-      - { label: "Contact Title", name: "contact_title", widget: "string" }
+      - { label: "Contact Title", name: "title", widget: "string" }
       - { label: "Contact Address", name: "address", widget: "string" }
       - { label: "Contact No", name: "phone", widget: "string" }
       - { label: "Contact Email", name: "email", widget: "string" }
