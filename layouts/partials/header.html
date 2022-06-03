@@ -12,7 +12,7 @@
 			{{ range .Site.Menus.main -}}
 			<li class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
 				<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-			</li> &nbsp; &nbsp; &nbsp;
+			</li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 			{{- end }}
 		</ul>
 	  </div>
