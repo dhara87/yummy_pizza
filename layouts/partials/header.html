@@ -4,16 +4,26 @@
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="oi oi-menu"></span> Menu
 		  </button>
+
+
 	  <div class="collapse navbar-collapse" id="ftco-nav">
 		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item {{if .IsHome}}active{{ end }}"><a href="/" class="nav-link">Home</a></li>
-		  <li class='nav-item {{if eq .Params.url "menu"}}active{{ end }}'><a href="/menu" class="nav-link">Menu</a></li>
-		  <li class='nav-item {{if eq .Params.url "services"}}active{{ end }}'><a href="/services" class="nav-link">Services</a></li>
-		  <li class='nav-item {{if eq .Params.url "blog"}}active{{ end }}'><a href="/blogs" class="nav-link">Blog</a></li>
-		  <li class='nav-item {{if eq .Params.url "about"}}active{{ end }}'><a href="/about" class="nav-link">About</a></li>
-		  <li class='nav-item {{if eq .Params.url "contact"}}active{{ end }}'><a href="/contact" class="nav-link">Contact</a></li>
+			{{- $currentPage := . -}}
+			{{ range .Site.Menus.main -}}
+			<li class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
+				<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+			</li> &nbsp; &nbsp; &nbsp;
+			{{- end }}
 		</ul>
 	  </div>
+
+
 	  </div>
+
+	  <ul>
+		{{ range $.Site.Home.AllTranslations }}
+		<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+		{{ end }}
+		</ul>
   </nav>
 <!-- END nav -->
