@@ -5,7 +5,7 @@ media_folder: "static/images"
 collections:
   - name: "Header" 
     label: "Header"
-    folder: "content/english"
+    folder: "content"
     create: false
     fields:
       - { label: "Header Title", name: "header_title", widget: "string" }
@@ -24,7 +24,7 @@ collections:
   
   - name: "Footer" 
     label: "Footer"
-    folder: "content/english"
+    folder: "content"
     create: false
     fields:
       - { label: "Footer Title", name: "footer_title", widget: "string" }
@@ -43,7 +43,7 @@ collections:
 
   - name: "Home Page" 
     label: "Home Page"
-    folder: "content/english"
+    folder: "content"
     create: false
     fields:
       - { label: "Home Title", name: "title", widget: "string" }
@@ -85,7 +85,7 @@ collections:
 
   - name: "About Section" 
     label: "About Section"
-    folder: "content/english/about"
+    folder: "content/about"
     create: false
     fields:
       - { label: "About Title", name: "title", widget: "string" }
@@ -106,7 +106,7 @@ collections:
 
   - name: "Chef Section" 
     label: "Chef"
-    folder: "content/english/about/our-chef"
+    folder: "content/about/our-chef"
     create: true
     fields:
       - { label: "Chef Name", name: "title", widget: "string" }
@@ -120,7 +120,7 @@ collections:
 
   - name: "Blogs" 
     label: "Blogs"
-    folder: "content/english/blogs"
+    folder: "content/blogs"
     create: true
     fields:
       - { label: "Blog Title", name: "title", widget: "string" }
@@ -137,7 +137,7 @@ collections:
 
   - name: "Contact Section" 
     label: "Contact"
-    folder: "content/english/contact"
+    folder: "content/contact"
     create: false
     fields:
       - { label: "Contact Title", name: "title", widget: "string" }
@@ -153,7 +153,7 @@ collections:
    
   - name: "Counter" 
     label: "Counter"
-    folder: "content/english/home/counter"
+    folder: "content/home/counter"
     create: false
     fields:
       - { label: "Counter Title", name: "title", widget: "string" }
@@ -165,7 +165,7 @@ collections:
    
   - name: "Gallery" 
     label: "Gallery"
-    folder: "content/english/home/gallery"
+    folder: "content/home/gallery"
     create: true
     fields:
       - { label: "Gallery Title", name: "title", widget: "string" }
@@ -174,7 +174,7 @@ collections:
    
   - name: "Slider" 
     label: "Slider"
-    folder: "content/english/home/slider_section"
+    folder: "content/home/slider_section"
     create: false
     fields:
       - { label: "Slider Main Title", name: "main_title", widget: "string" }
@@ -191,7 +191,7 @@ collections:
 
   - name: "Menu Filter Burger" 
     label: "Menu Filter Burger"
-    folder: "content/english/menu/menu-filter/burgers-filter"
+    folder: "content/menu/menu-filter/burgers-filter"
     create: true
     fields:
       - { label: "Burger Name", name: "title", widget: "string" }
@@ -205,7 +205,7 @@ collections:
 
   - name: "Menu Filter Drink" 
     label: "Menu Filter Drink"
-    folder: "content/english/menu/menu-filter/drinks-filter"
+    folder: "content/menu/menu-filter/drinks-filter"
     create: true
     fields:
       - { label: "Drink Name", name: "title", widget: "string" }
@@ -220,7 +220,7 @@ collections:
   
   - name: "Menu Filter Pasta" 
     label: "Menu Filter Pasta"
-    folder: "content/english/menu/menu-filter/pasta-filter"
+    folder: "content/menu/menu-filter/pasta-filter"
     create: true
     fields:
       - { label: "Pasta Name", name: "title", widget: "string" }
@@ -235,7 +235,7 @@ collections:
   
   - name: "Menu Filter Pizza" 
     label: "Menu Filter Pizza"
-    folder: "content/english/menu/menu-filter/pizza-filter"
+    folder: "content/menu/menu-filter/pizza-filter"
     create: true
     fields:
       - { label: "Pizza Name", name: "title", widget: "string" }
@@ -249,7 +249,7 @@ collections:
 
   - name: "Pizza" 
     label: "Pizza"
-    folder: "content/english/menu/our-menu"
+    folder: "content/menu/our-menu"
     create: true
     fields:
       - { label: "Pizza Name", name: "title", widget: "string" }
@@ -263,7 +263,7 @@ collections:
       
   - name: "Menu_Items" 
     label: "Menu_Items"
-    folder: "content/english/menu/our-menu-pricing"
+    folder: "content/menu/our-menu-pricing"
     create: true
     fields:
       - { label: "Menu Item Name", name: "title", widget: "string" }
@@ -277,7 +277,7 @@ collections:
    
   - name: "Service" 
     label: "Service"
-    folder: "content/english/services"
+    folder: "content/services"
     create: true
     fields:
       - { label: "Service Name", name: "title", widget: "string" }
