@@ -69,8 +69,8 @@ footer_blog_title: Recent Blog
 footer_blog_title_fr: French Recent Blog
 footer_services: Services
 footer_services_fr: FServices
-footer_question_text: Have A Question ?
-footer_question_text_fr: French Have A Question ?
+footer_question_text: Have A Question?
+footer_question_text_fr: French Have A Question?
 footer_address: 203 Fake St. Mountain View, San Francisco, California, USA
 footer_address_fr: French 203 Fake St. Mountain View, San Francisco, California, USA
 header_title: Header
