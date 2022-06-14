@@ -3,30 +3,85 @@ backend:
   branch: master
 media_folder: "static/images"
 collections:
+  - name: "Header" 
+    label: "Header"
+    folder: "content/english"
+    create: false
+    fields:
+      - { label: "Header Title", name: "header_title", widget: "string" }
+      - { label: "Header Home", name: "header_home", widget: "string" }
+      - { label: "Header Home French", name: "header_home_fr", widget: "string" }
+      - { label: "Header Menu", name: "header_menu", widget: "string" }
+      - { label: "Header Menu French", name: "header_menu_fr", widget: "string" }
+      - { label: "Header Service", name: "header_services", widget: "string" }
+      - { label: "Header Service French", name: "header_services_fr", widget: "string" }
+      - { label: "Header Blog", name: "header_blog", widget: "string" }
+      - { label: "Header Blog French", name: "header_blog_fr", widget: "string" }
+      - { label: "Header About", name: "header_about", widget: "string" }
+      - { label: "Header About French", name: "header_about_fr", widget: "string" }
+      - { label: "Header Contact", name: "header_contact", widget: "string" }
+      - { label: "Header Contact French", name: "header_contact_fr", widget: "string" }
+  
+  - name: "Footer" 
+    label: "Footer"
+    folder: "content/english"
+    create: false
+    fields:
+      - { label: "Footer Title", name: "footer_title", widget: "string" }
+      - { label: "Footer About Us", name: "footer_about_us", widget: "string" }
+      - { label: "Footer About Us French", name: "footer_about_us_fr", widget: "string" }
+      - { label: "Footer About Us Text", name: "footer_about_us_text", widget: "string" }
+      - { label: "Footer About Us Text French", name: "footer_about_us_text_fr", widget: "string" }
+      - { label: "Footer Blog Title", name: "footer_blog_title", widget: "string" }
+      - { label: "Footer Blog Title French", name: "footer_blog_title_fr", widget: "string" }
+      - { label: "Footer Services", name: "footer_services", widget: "string" }
+      - { label: "Footer Services French", name: "footer_services_fr", widget: "string" }
+      - { label: "Footer Question Text", name: "footer_question_text", widget: "string" }
+      - { label: "Footer Question Text French", name: "footer_question_text_fr", widget: "string" }
+      - { label: "Footer Address", name: "footer_address", widget: "string" }
+      - { label: "Footer Address French", name: "footer_address_fr", widget: "string" }
+
   - name: "Home Page" 
     label: "Home Page"
     folder: "content/english"
     create: false
     fields:
       - { label: "Home Title", name: "title", widget: "string" }
+      - { label: "French Home Title", name: "title_fr", widget: "string" }
       - { label: "Home Slider 3 Heading", name: "slider3_heading", widget: "string" }
+      - { label: "French Home Slider 3 Heading", name: "slider3_heading_fr", widget: "string" }
       - { label: "Home Slider 3 Title", name: "slider3_title", widget: "string" }
+      - { label: "French Home Slider 3 Title", name: "slider3_title_fr", widget: "string" }
       - { label: "Slider 3 Content", name: "slider3_content", widget: "text" }
+      - { label: "French Slider 3 Content", name: "slider3_content_fr", widget: "text" }
       - { label: "About Image URL", name: "about_image_url", widget: "image" }
       - { label: "Home Content", name: "about_content", widget: "text" }
+      - { label: "French Home Content", name: "about_content_fr", widget: "text" }
       - { label: "Menu Image URL", name: "menu_image_url", widget: "image" }
       - { label: "Menu Filter 1", name: "menu_filter_1", widget: "string" }
+      - { label: "French Menu Filter 1", name: "menu_filter_1_fr", widget: "string" }
       - { label: "Menu Filter 2", name: "menu_filter_2", widget: "string" }
+      - { label: "French Menu Filter 2", name: "menu_filter_2_fr", widget: "string" }
       - { label: "Menu Filter 3", name: "menu_filter_3", widget: "string" }
+      - { label: "French Menu Filter 3", name: "menu_filter_3_fr", widget: "string" }
       - { label: "Menu Filter 4", name: "menu_filter_4", widget: "string" }
+      - { label: "French Menu Filter 4", name: "menu_filter_4_fr", widget: "string" }
       - { label: "Service Heading", name: "services_heading_home", widget: "string" }
+      - { label: "French Service Heading", name: "services_heading_home_fr", widget: "string" }
       - { label: "Service Content", name: "services_content_home", widget: "text" }
+      - { label: "French Service Content", name: "services_content_home_fr", widget: "text" }
       - { label: "Menu Title Home", name: "menu_title_home", widget: "string" }
+      - { label: "French Menu Title Home", name: "menu_title_home_fr", widget: "string" }
       - { label: "Menu Content Home", name: "menu_content_home", widget: "text" }
+      - { label: "French Menu Content Home", name: "menu_content_home_fr", widget: "text" }
       - { label: "Menu Pricing Title Home", name: "menu_pricing_title_home", widget: "string" }
+      - { label: "French Menu Pricing Title Home", name: "menu_pricing_title_home_fr", widget: "string" }
       - { label: "Menu Pricing Content Home", name: "menu_pricing_content_home", widget: "text" }
+      - { label: "French Menu Pricing Content Home", name: "menu_pricing_content_home_fr", widget: "text" }
       - { label: "Blog Title Home", name: "blog_title_home", widget: "string" }
+      - { label: "French Blog Title Home", name: "blog_title_home_fr", widget: "string" }
       - { label: "Blog Content Home", name: "blog_content_home", widget: "text" }
+      - { label: "French Blog Content Home", name: "blog_content_home_fr", widget: "text" }
 
   - name: "About Section" 
     label: "About Section"
@@ -34,14 +89,19 @@ collections:
     create: false
     fields:
       - { label: "About Title", name: "title", widget: "string" }
+      - { label: "French About Title", name: "title_fr", widget: "string" }
       - { label: "About Profile", name: "subtitle", widget: "string" }
+      - { label: "French About Profile", name: "subtitle_fr", widget: "string" }
       - { label: "About URL Text", name: "url", widget: "string" }
       - { label: "About Image", name: "page_header_bg", widget: "image" }
       - { label: "About Meta Description", name: "description", widget: "text" }
       - { label: "About Content", name: "about_content", widget: "text" }
+      - { label: "French About Content", name: "about_content_fr", widget: "text" }
       - { label: "About Background Image", name: "about_bg_image", widget: "image" }
       - { label: "Our Chef Title", name: "our_chef_title", widget: "string" }
+      - { label: "French Our Chef Title", name: "our_chef_title_fr", widget: "string" }
       - { label: "Our Chef Content", name: "our_chef_content", widget: "text" }
+      - { label: "French Our Chef Content", name: "our_chef_content_fr", widget: "text" }
       - { label: "Layout", name: "layout", widget: "string" }
 
   - name: "Chef Section" 
@@ -50,9 +110,12 @@ collections:
     create: true
     fields:
       - { label: "Chef Name", name: "title", widget: "string" }
+      - { label: "French Chef Name", name: "title_fr", widget: "string" }
       - { label: "Chef Profile", name: "chef_profile", widget: "string" }
+      - { label: "French Chef Profile", name: "chef_profile_fr", widget: "string" }
       - { label: "Chef Image", name: "chef_image_url", widget: "image" }
       - { label: "Chef Content", name: "chef_content", widget: "text" }
+      - { label: "French Chef Content", name: "chef_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
   - name: "Blogs" 
@@ -61,11 +124,15 @@ collections:
     create: true
     fields:
       - { label: "Blog Title", name: "title", widget: "string" }
+      - { label: "French Blog Title", name: "title_fr", widget: "string" }
       - { label: "Blog Slug", name: "slug", widget: "string" }
       - { label: "Blog Date", name: "blog_date", widget: "datetime" }
+      - { label: "French Blog Date", name: "blog_date_fr", widget: "datetime" }
       - { label: "Blog Image", name: "blog_image_url", widget: "image" }
       - { label: "Blog Title", name: "blog_title", widget: "string" }
+      - { label: "French Blog Title", name: "blog_title_fr", widget: "string" }
       - { label: "Blog Summery", name: "blog_summary", widget: "text" }
+      - { label: "French Blog Summery", name: "blog_summary_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
   - name: "Contact Section" 
@@ -74,9 +141,13 @@ collections:
     create: false
     fields:
       - { label: "Contact Title", name: "title", widget: "string" }
+      - { label: "French Contact Title", name: "title_fr", widget: "string" }
       - { label: "Contact Address", name: "address", widget: "string" }
+      - { label: "French Contact Address", name: "address_fr", widget: "string" }
       - { label: "Contact No", name: "phone", widget: "string" }
+      - { label: "French Contact No", name: "phone_fr", widget: "string" }
       - { label: "Contact Email", name: "email", widget: "string" }
+      - { label: "French Contact Email", name: "email_fr", widget: "string" }
       - { label: "Contact Image", name: "page_header_bg", widget: "image" }
       - { label: "Contact Meta Description", name: "description", widget: "text" }
    
@@ -86,7 +157,9 @@ collections:
     create: false
     fields:
       - { label: "Counter Title", name: "title", widget: "string" }
+      - { label: "French Counter Title", name: "title_fr", widget: "string" }
       - { label: "Counter Count", name: "count", widget: "string" }
+      - { label: "French Counter Count", name: "count_fr", widget: "string" }
       - { label: "Counter Image", name: "icon", widget: "image" }
       - { label: "Counter Type", name: "type", widget: "string" }
    
@@ -105,10 +178,15 @@ collections:
     create: false
     fields:
       - { label: "Slider Main Title", name: "main_title", widget: "string" }
+      - { label: "French Slider Main Title", name: "main_title_fr", widget: "string" }
       - { label: "Slider Title", name: "title", widget: "string" }
+      - { label: "French Slider Title", name: "title_fr", widget: "string" }
       - { label: "Slider Heading", name: "slider_heading", widget: "string" }
+      - { label: "French Slider Heading", name: "slider_heading_fr", widget: "string" }
       - { label: "Slider Content", name: "slider_content", widget: "text" }
+      - { label: "French Slider Content", name: "slider_content_fr", widget: "text" }
       - { label: "Slider Image", name: "slider_image_url", widget: "image" }
+      - { label: "French Slider Image", name: "slider_image_url_fr", widget: "image" }
       - { label: "Slider Type", name: "type", widget: "string" }
 
   - name: "Menu Filter Burger" 
@@ -117,9 +195,12 @@ collections:
     create: true
     fields:
       - { label: "Burger Name", name: "title", widget: "string" }
+      - { label: "FrenchBurger Name", name: "title_fr", widget: "string" }
       - { label: "Burger Price", name: "burger_price", widget: "string" }
+      - { label: "French Burger Price", name: "burger_price_fr", widget: "string" }
       - { label: "Burger Image", name: "burger_image", widget: "image" }
       - { label: "Burger Description", name: "burger_content", widget: "text" }
+      - { label: "French Burger Description", name: "burger_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
   - name: "Menu Filter Drink" 
@@ -128,9 +209,12 @@ collections:
     create: true
     fields:
       - { label: "Drink Name", name: "title", widget: "string" }
+      - { label: "French Drink Name", name: "title_fr", widget: "string" }
       - { label: "Drink Price", name: "drink_price", widget: "string" }
+      - { label: "French Drink Price", name: "drink_price_fr", widget: "string" }
       - { label: "Drink Image", name: "drink_image", widget: "image" }
       - { label: "Drink Description", name: "drink_content", widget: "text" }
+      - { label: "French Drink Description", name: "drink_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
    
   
@@ -140,9 +224,12 @@ collections:
     create: true
     fields:
       - { label: "Pasta Name", name: "title", widget: "string" }
+      - { label: "French Pasta Name", name: "title_fr", widget: "string" }
       - { label: "Pasta Price", name: "pasta_price", widget: "string" }
+      - { label: "French Pasta Price", name: "pasta_price_fr", widget: "string" }
       - { label: "Pasta Image", name: "pasta_image", widget: "image" }
       - { label: "Pasta Description", name: "pasta_content", widget: "text" }
+      - { label: "French Pasta Description", name: "pasta_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
    
   
@@ -152,9 +239,12 @@ collections:
     create: true
     fields:
       - { label: "Pizza Name", name: "title", widget: "string" }
+      - { label: "French Pizza Name", name: "title_fr", widget: "string" }
       - { label: "Pizza Price", name: "pizza_price", widget: "string" }
+      - { label: "French Pizza Price", name: "pizza_price_fr", widget: "string" }
       - { label: "Pizza Image", name: "pizza_image", widget: "image" }
       - { label: "Pizza Description", name: "pizza_content", widget: "text" }
+      - { label: "French Pizza Description", name: "pizza_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
   - name: "Pizza" 
@@ -163,9 +253,12 @@ collections:
     create: true
     fields:
       - { label: "Pizza Name", name: "title", widget: "string" }
+      - { label: "French Pizza Name", name: "title_fr", widget: "string" }
       - { label: "Pizza Price", name: "pizza_price", widget: "string" }
+      - { label: "French Pizza Price", name: "pizza_price_fr", widget: "string" }
       - { label: "Pizza Image", name: "pizza_image_url", widget: "image" }
       - { label: "Pizza Description", name: "pizza_content", widget: "text" }
+      - { label: "French Pizza Description", name: "pizza_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
       
   - name: "Menu_Items" 
@@ -174,9 +267,12 @@ collections:
     create: true
     fields:
       - { label: "Menu Item Name", name: "title", widget: "string" }
+      - { label: "French Menu Item Name", name: "title_fr", widget: "string" }
       - { label: "Menu Item Price", name: "menu_item_price", widget: "string" }
+      - { label: "French Menu Item Price", name: "menu_item_price_fr", widget: "string" }
       - { label: "Menu Item Image", name: "menu_item_image_url", widget: "image" }
       - { label: "Menu Item Description", name: "menu_item_content", widget: "text" }
+      - { label: "French Menu Item Description", name: "menu_item_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
    
   - name: "Service" 
@@ -185,196 +281,13 @@ collections:
     create: true
     fields:
       - { label: "Service Name", name: "title", widget: "string" }
+      - { label: "French Service Name", name: "title_fr", widget: "string" }
       - { label: "Service Icon", name: "icon_css_class", widget: "image" }
       - { label: "Service Description", name: "service_content", widget: "text" }
+      - { label: "French Service Description", name: "service_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
-  - name: "French Home Page" 
-    label: "French Home Page"
-    folder: "content/french"
-    create: false
-    fields:
-      - { label: "Home Title", name: "title", widget: "string" }
-      - { label: "Home Slider 3 Heading", name: "slider3_heading", widget: "string" }
-      - { label: "Home Slider 3 Title", name: "slider3_title", widget: "string" }
-      - { label: "Slider 3 Content", name: "slider3_content", widget: "text" }
-      - { label: "About Image URL", name: "about_image_url", widget: "image" }
-      - { label: "Home Content", name: "about_content", widget: "text" }
-      - { label: "Menu Image URL", name: "menu_image_url", widget: "image" }
-      - { label: "Menu Filter 1", name: "menu_filter_1", widget: "string" }
-      - { label: "Menu Filter 2", name: "menu_filter_2", widget: "string" }
-      - { label: "Menu Filter 3", name: "menu_filter_3", widget: "string" }
-      - { label: "Menu Filter 4", name: "menu_filter_4", widget: "string" }
-      - { label: "Service Heading", name: "services_heading_home", widget: "string" }
-      - { label: "Service Content", name: "services_content_home", widget: "text" }
-      - { label: "Menu Title Home", name: "menu_title_home", widget: "string" }
-      - { label: "Menu Content Home", name: "menu_content_home", widget: "text" }
-      - { label: "Menu Pricing Title Home", name: "menu_pricing_title_home", widget: "string" }
-      - { label: "Menu Pricing Content Home", name: "menu_pricing_content_home", widget: "text" }
-      - { label: "Blog Title Home", name: "blog_title_home", widget: "string" }
-      - { label: "Blog Content Home", name: "blog_content_home", widget: "text" }
-  
-  - name: "French Services" 
-    label: "French Services"
-    folder: "content/french/servicess"
-    create: true
-    fields:
-      - { label: "Service Name", name: "title", widget: "string" }
-      - { label: "Service Icon", name: "icon_css_class", widget: "image" }
-      - { label: "Service Description", name: "service_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "French About Section" 
-    label: "French About Section"
-    folder: "content/french/about"
-    create: false
-    fields:
-      - { label: "About Title", name: "title", widget: "string" }
-      - { label: "About Profile", name: "subtitle", widget: "string" }
-      - { label: "About URL Text", name: "url", widget: "string" }
-      - { label: "About Image", name: "page_header_bg", widget: "image" }
-      - { label: "About Meta Description", name: "description", widget: "text" }
-      - { label: "About Content", name: "about_content", widget: "text" }
-      - { label: "About Background Image", name: "about_bg_image", widget: "image" }
-      - { label: "Our Chef Title", name: "our_chef_title", widget: "string" }
-      - { label: "Our Chef Content", name: "our_chef_content", widget: "text" }
-      - { label: "Layout", name: "layout", widget: "string" }
-
-  - name: "French Chef Section" 
-    label: "French Chef"
-    folder: "content/french/about/our-chef"
-    create: true
-    fields:
-      - { label: "Chef Name", name: "title", widget: "string" }
-      - { label: "Chef Profile", name: "chef_profile", widget: "string" }
-      - { label: "Chef Image", name: "chef_image_url", widget: "image" }
-      - { label: "Chef Content", name: "chef_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "French Blogs" 
-    label: "French Blogs"
-    folder: "content/french/blogs"
-    create: true
-    fields:
-      - { label: "Blog Title", name: "title", widget: "string" }
-      - { label: "Blog Slug", name: "slug", widget: "string" }
-      - { label: "Blog Date", name: "blog_date", widget: "datetime" }
-      - { label: "Blog Image", name: "blog_image_url", widget: "image" }
-      - { label: "Blog Title", name: "blog_title", widget: "string" }
-      - { label: "Blog Summery", name: "blog_summary", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "French Contact Section" 
-    label: "French Contact"
-    folder: "content/french/contact"
-    create: false
-    fields:
-      - { label: "Contact Title", name: "title", widget: "string" }
-      - { label: "Contact Address", name: "address", widget: "string" }
-      - { label: "Contact No", name: "phone", widget: "string" }
-      - { label: "Contact Email", name: "email", widget: "string" }
-      - { label: "Contact Image", name: "page_header_bg", widget: "image" }
-      - { label: "Contact Meta Description", name: "description", widget: "text" }
-   
-  - name: "French Counter" 
-    label: "French Counter"
-    folder: "content/french/home/counter"
-    create: false
-    fields:
-      - { label: "Counter Title", name: "title", widget: "string" }
-      - { label: "Counter Count", name: "count", widget: "string" }
-      - { label: "Counter Image", name: "icon", widget: "image" }
-      - { label: "Counter Type", name: "type", widget: "string" }
-   
-  - name: "French Gallery" 
-    label: "French Gallery"
-    folder: "content/french/home/gallery"
-    create: true
-    fields:
-      - { label: "Gallery Title", name: "title", widget: "string" }
-      - { label: "Gallery Image", name: "gallery_image_url", widget: "image" }
-      - { label: "Gallery Type", name: "type", widget: "string" }
-   
-  - name: "French Slider" 
-    label: "French Slider"
-    folder: "content/french/home/slider_section"
-    create: false
-    fields:
-      - { label: "Slider Main Title", name: "main_title", widget: "string" }
-      - { label: "Slider Title", name: "title", widget: "string" }
-      - { label: "Slider Heading", name: "slider_heading", widget: "string" }
-      - { label: "Slider Content", name: "slider_content", widget: "text" }
-      - { label: "Slider Image", name: "slider_image_url", widget: "image" }
-      - { label: "Slider Type", name: "type", widget: "string" }
-
-  - name: "French Menu Filter Burger" 
-    label: "French Menu Filter Burger"
-    folder: "content/french/menu/menu-filter/burgers-filter"
-    create: true
-    fields:
-      - { label: "Burger Name", name: "title", widget: "string" }
-      - { label: "Burger Price", name: "burger_price", widget: "string" }
-      - { label: "Burger Image", name: "burger_image", widget: "image" }
-      - { label: "Burger Description", name: "burger_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "French Menu Filter Drink" 
-    label: "French Menu Filter Drink"
-    folder: "content/french/menu/menu-filter/drinks-filter"
-    create: true
-    fields:
-      - { label: "Drink Name", name: "title", widget: "string" }
-      - { label: "Drink Price", name: "drink_price", widget: "string" }
-      - { label: "Drink Image", name: "drink_image", widget: "image" }
-      - { label: "Drink Description", name: "drink_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
-  
-  - name: "French Menu Filter Pasta" 
-    label: "French Menu Filter Pasta"
-    folder: "content/french/menu/menu-filter/pasta-filter"
-    create: true
-    fields:
-      - { label: "Pasta Name", name: "title", widget: "string" }
-      - { label: "Pasta Price", name: "pasta_price", widget: "string" }
-      - { label: "Pasta Image", name: "pasta_image", widget: "image" }
-      - { label: "Pasta Description", name: "pasta_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
-  
-  - name: "French Menu Filter Pizza" 
-    label: "French Menu Filter Pizza"
-    folder: "content/french/menu/menu-filter/pizza-filter"
-    create: true
-    fields:
-      - { label: "Pizza Name", name: "title", widget: "string" }
-      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
-      - { label: "Pizza Image", name: "pizza_image", widget: "image" }
-      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "French Pizza" 
-    label: "French Pizza"
-    folder: "content/french/menu/our-menu"
-    create: true
-    fields:
-      - { label: "Pizza Name", name: "title", widget: "string" }
-      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
-      - { label: "Pizza Image", name: "pizza_image_url", widget: "image" }
-      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-      
-  - name: "French Menu_Items" 
-    label: "French Menu_Items"
-    folder: "content/french/menu/our-menu-pricing"
-    create: true
-    fields:
-      - { label: "Menu Item Name", name: "title", widget: "string" }
-      - { label: "Menu Item Price", name: "menu_item_price", widget: "string" }
-      - { label: "Menu Item Image", name: "menu_item_image_url", widget: "image" }
-      - { label: "Menu Item Description", name: "menu_item_content", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
+ 
   
   
   

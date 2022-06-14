@@ -139,48 +139,6 @@ name = "Contact"
 URL = "/contact"
 weight = 6
 
-
-################################### French language #####################################
-[Languages.fr]
-languageName = "french"
-languageCode = "fr-CA"
-contentDir = "content/french"
-weight = 2
-# copyright
-copyright = "Copyright ©2022 All rights reserved"
-browserviews = "This website is best viewed on IE 11+, Mozilla Firefox, Google"
-  
-[[Languages.fr.menu.main]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[Languages.fr.menu.main]]
-name = "Menu"
-URL = "/fr/menu"
-weight = 2
-
-[[Languages.fr.menu.main]]
-name = "Services"
-URL = "/fr/services"
-weight = 3
-
-[[Languages.fr.menu.main]]
-name = "Blog"
-URL = "/fr/blogs"
-weight = 4
-
-[[Languages.fr.menu.main]]
-name = "About"
-URL = "/fr/about"
-weight = 5
-
-[[Languages.fr.menu.main]]
-name = "Contact"
-URL = "/fr/contact"
-weight = 6
-
-
 ################################### Deployment Script #####################################
 
 [deployment]

@@ -5,19 +5,24 @@
                   <div class="col-md-4 contact-info ftco-animate">
                       <div class="row">
                           <div class="col-md-12 mb-4">
-                <h2 class="h4">{{ .Params.contact_heading }}</h2>
+                <h2 class="h4 has_lang" lang="en">{{ .Params.contact_heading }}</h2>
+                <h2 class="h4 has_lang" lang="fr">{{ .Params.contact_heading_fr }}</h2>
               </div>
               <div class="col-md-12 mb-3">
-                <p><span>Address:</span> {{ .Params.address }}</p>
+                <p class="has_lang" lang="en"><span>Address:</span> {{ .Params.address }}</p>
+                <p class="has_lang" lang="fr"><span>Address:</span> {{ .Params.address_fr }}</p>
               </div>
               <div class="col-md-12 mb-3">
-                <p><span>Phone:</span> <a href="tel:{{ .Params.phone }}">{{ .Params.phone }}</a></p>
+                <p class="has_lang" lang="en"><span>Phone:</span> <a href="tel:{{ .Params.phone }}">{{ .Params.phone }}</a></p>
+                <p class="has_lang" lang="fr"><span>Phone:</span> <a href="tel:{{ .Params.phone }}">{{ .Params.phone_fr}}</a></p>
               </div>
               <div class="col-md-12 mb-3">
-                <p><span>Email:</span> <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+                <p class="has_lang" lang="en"><span>Email:</span> <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+                <p class="has_lang" lang="fr"><span>Email:</span> <a href="mailto:{{ .Params.email}}">{{ .Params.email_fr }}</a></p>
               </div>
               <div class="col-md-12 mb-3">
-                <p><span>Website:</span> <a href="#">{{ .Params.website }}</a></p>
+                <p class="has_lang" lang="en"><span>Website:</span> <a href="#">{{ .Params.website }}</a></p>
+                <p class="has_lang" lang="fr"><span>Website:</span> <a href="#">{{ .Params.website_fr }}</a></p>
               </div>
                       </div>
                   </div>
@@ -27,7 +32,8 @@
               <div class="row">
                   <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Name">
+                    <input type="text" class="form-control has_lang" lang="en" placeholder="{{ .Params.name_placeholder}}">
+                    <input type="text" class="form-control has_lang" lang="fr" placeholder="{{ .Params.name_placeholder_fr}}">
                   </div>
               </div>
               <div class="col-md-6">

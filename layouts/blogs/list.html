@@ -3,8 +3,10 @@
     <div class="container">
       <div class="row justify-content-center mb-5 pb-3">
         <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">{{ .Params.main_title }}</h2>
-          <p>{{ .Params.blog_content }}</p>
+          <h2 class="mb-4 has_lang" lang="en">{{ .Params.main_title }}</h2>
+          <h2 class="mb-4 has_lang" lang="fr">{{ .Params.main_title_fr }}</h2>
+          <p class="has_lang" lang="en">{{ .Params.blog_content }}</p>
+          <p class="has_lang" lang="fr">{{ .Params.blog_content_fr }}</p>
         </div>
       </div>
       <div class="row d-flex">
@@ -15,12 +17,15 @@
             </a>
             <div class="text py-4 d-block">
                 <div class="meta">
-                <div><a href="#">{{ .Params.blog_date }}</a></div>
+                <div><a class="has_lang" lang="en" href="#">{{ .Params.blog_date }}</a></div>
+                <div><a class="has_lang" lang="fr" href="#">{{ .Params.blog_date_fr }}</a></div>
                 <div><a href="#">Admin</a></div>
                 <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
               </div>
-              <h3 class="heading mt-2"><a href="#">{{ .Params.blog_title }}</a></h3>
-              <p>{{ .Params.blog_summary }}</p>
+              <h3 class="heading mt-2 has_lang" lang="en"><a href="#">{{ .Params.blog_title }}</a></h3>
+              <h3 class="heading mt-2 has_lang" lang="fr"><a href="#">{{ .Params.blog_title_fr }}</a></h3>
+              <p class="has_lang" lang="en">{{ .Params.blog_summary }}</p>
+              <p class="has_lang" lang="fr">{{ .Params.blog_summary_fr }}</p>
             </div>
           </div>
         </div>

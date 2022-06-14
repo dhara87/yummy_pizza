@@ -6,11 +6,13 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row slider-text align-items-center" data-scrollax-parent="true">
-
         <div class="col-md-6 col-sm-12 ftco-animate">
-          <span class="subheading">{{ .Params.slider_heading }}</span>
-          <h1 class="mb-4">{{ .Params.slider_title }}</h1>
-          <p class="mb-4 mb-md-5">{{ .Params.slider_content }}</p>
+          <span class="subheading has_lang" lang="en">{{ .Params.slider_heading }}</span>
+          <span class="subheading has_lang" lang="fr">{{ .Params.slider_heading_fr }}</span>
+          <h1 class="mb-4 has_lang" lang="en">{{ .Params.slider_title }}</h1>
+          <h1 class="mb-4 has_lang" lang="fr">{{ .Params.slider_title_fr }}</h1>
+          <p class="mb-4 mb-md-5 has_lang" lang="en">{{ .Params.slider_content }}</p>
+          <p class="mb-4 mb-md-5 has_lang" lang="fr">{{ .Params.slider_content_fr }}</p>
           <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
         </div>
         <div class="col-md-6 ftco-animate">
@@ -28,9 +30,12 @@
       <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
         <div class="col-md-7 col-sm-12 text-center ftco-animate">
-          <span class="subheading">{{ .Params.slider3_heading }}</span>
-          <h1 class="mb-4">{{ .Params.slider3_title }}</h1>
-          <p class="mb-4 mb-md-5">{{ .Params.slider3_content }}</p>
+          <span class="subheading has_lang" lang="en">{{ .Params.slider3_heading }}</span>
+          <span class="subheading has_lang" lang="fr">{{ .Params.slider3_heading_fr }}</span>
+          <h1 class="mb-4 has_lang" lang="en">{{ .Params.slider3_title }}</h1>
+          <h1 class="mb-4 has_lang" lang="fr">{{ .Params.slider3_title_fr }}</h1>
+          <p class="mb-4 mb-md-5 has_lang" lang="en">{{ .Params.slider3_content }}</p>
+          <p class="mb-4 mb-md-5 has_lang" lang="fr">{{ .Params.slider3_content_fr }}</p>
           <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
         </div>
         
@@ -85,7 +90,8 @@
           <h2 class="mb-4">Welcome to<span class="flaticon-pizza">Pizza</span> A Restaurant</h2>
       </div>
       <div>
-          <p>{{ .Params.about_content }}</p>
+          <p class=" has_lang" lang="en">{{ .Params.about_content }}</p>
+          <p class=" has_lang" lang="fr">{{ .Params.about_content_fr }}</p>
       </div>
   </div>
 </section>
@@ -95,8 +101,10 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.services_heading_home }}</h2>
-        <p>{{ .Params.services_content_home }}</p>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.services_heading_home }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.services_heading_home_fr }}</h2>
+        <p class=" has_lang" lang="en">{{ .Params.services_content_home }}</p>
+        <p class=" has_lang" lang="fr">{{ .Params.services_content_home_fr }}</p>
       </div>
     </div>
     <div class="row">
@@ -107,8 +115,10 @@
             <img src="{{.Params.icon_image}}"alt='image'>
           </div>
           <div class="media-body">
-            <h3 class="heading">{{ .Params.title }}</h3>
-            <p>{{ .Params.service_content }}</p>
+            <h3 class="heading has_lang" lang="en">{{ .Params.title }}</h3>
+            <h3 class="heading has_lang" lang="fr">{{ .Params.title_fr }}</h3>
+            <p class=" has_lang" lang="en">{{ .Params.service_content }}</p>
+            <p class=" has_lang" lang="fr">{{ .Params.service_content_fr }}</p>
           </div>
         </div>
       </div>
@@ -121,8 +131,10 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.menu_title_home }}</h2>
-        <p>{{ .Params.menu_content_home }}</p>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.menu_title_home }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.menu_title_home_fr }}</h2>
+        <p class=" has_lang" lang="en">{{ .Params.menu_content_home }}</p>
+        <p class=" has_lang" lang="fr">{{ .Params.menu_content_home_fr }}</p>
       </div>
     </div>
   </div>
@@ -133,10 +145,12 @@
         <div class="services-wrap d-flex">
           <a href="#" class="img order-lg-last" style="background-image: url('{{ .Params.pizza_image_url}}');"></a>
           <div class="text p-4">
-            <h3>{{ .Params.title }}</h3>
-            <p>{{ .Params.pizza_content }} </p>
-            <p class="price"><span>{{ .Params.pizza_price }}</span> <a href="#"
-                class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+            <h3 class="has_lang" lang="en">{{ .Params.title }}</h3>
+            <h3 class="has_lang" lang="fr">{{ .Params.title_fr }}</h3>
+            <p class="has_lang" lang="en">{{ .Params.pizza_content }} </p>
+            <p class=" has_lang" lang="fr">{{ .Params.pizza_content_fr }} </p>
+            <p class="price has_lang" lang="en"><span>{{ .Params.pizza_price }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+            <p class="price has_lang" lang="fr"><span>{{ .Params.pizza_price_fr }}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
           </div>
         </div>
       </div>
@@ -147,9 +161,11 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
       <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">{{ .Params.menu_pricing_title_home }}</h2>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.menu_pricing_title_home }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.menu_pricing_title_home_fr }}</h2>
         <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-        <p class="mt-5">{{ .Params.menu_pricing_content_home }}</p>
+        <p class="mt-5 has_lang" lang="en">{{ .Params.menu_pricing_content_home }}</p>
+        <p class="mt-5 has_lang" lang="fr">{{ .Params.menu_pricing_content_home_fr }}</p>
       </div>
     </div>
     <div class="row">
@@ -159,11 +175,14 @@
           <div class="img" style="background-image: url('{{ .Params.menu_item_image_url}}');"></div>
           <div class="desc pl-3">
             <div class="d-flex text align-items-center">
-              <h3><span>{{ .Params.title }}</span></h3>
-              <span class="price">{{ .Params.menu_item_price }}</span>
+              <h3 class=" has_lang" lang="en"><span>{{ .Params.title }}</span></h3>
+              <h3 class=" has_lang" lang="fr"><span>{{ .Params.title_fr }}</span></h3>
+              <span class="price has_lang" lang="en">{{ .Params.menu_item_price }}</span>
+              <span class="price has_lang" lang="fr">{{ .Params.menu_item_price_fr }}</span>
             </div>
             <div class="d-block">
-              <p>{{ .Params.menu_item_content }}</p>
+              <p class="has_lang" lang="en">{{ .Params.menu_item_content }}</p>
+              <p class="has_lang" lang="fr">{{ .Params.menu_item_content_fr }}</p>
             </div>
           </div>
         </div>
@@ -202,8 +221,10 @@
             <div class="block-18 text-center">
               <div class="text">
                 <div class="icon"><span class="{{ .Params.icon }}"></span></div>
-                <strong class="number" data-number="{{ .Params.count }}">0</strong>
-                <span>{{ .Params.title }}</span>
+                <strong class="number has_lang" lang="en" data-number="{{ .Params.count }}">0</strong>
+                <strong class="number has_lang" lang="fr" data-number="{{ .Params.count_fr }}">0</strong>
+                <span class=" has_lang" lang="en">{{ .Params.title }}</span>
+                <span class="has_lang" lang="fr">{{ .Params.title_fr }}</span>
               </div>
             </div>
           </div>
@@ -224,17 +245,29 @@
         <div class="row">
           <div class="col-md-12 nav-link-wrap mb-5">
             <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+              <a class="nav-link active has_lang" lang="en" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
                 aria-controls="v-pills-1" aria-selected="true">{{ .Params.menu_filter_1 }}</a>
+              
+              <a class="nav-link active has_lang" lang="fr" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+                aria-controls="v-pills-1" aria-selected="true">{{ .Params.menu_filter_1_fr }}</a>
 
-              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+              <a class="nav-link has_lang" lang="en" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
                 aria-controls="v-pills-2" aria-selected="false">{{ .Params.menu_filter_2 }}</a>
+              
+              <a class="nav-link has_lang" lang="fr" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                aria-controls="v-pills-2" aria-selected="false">{{ .Params.menu_filter_2_fr }}</a>
 
-              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+              <a class="nav-link has_lang" lang="en" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
                 aria-controls="v-pills-3" aria-selected="false">{{ .Params.menu_filter_3 }}</a>
 
-              <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+              <a class="nav-link has_lang" lang="fr" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+                aria-controls="v-pills-3" aria-selected="false">{{ .Params.menu_filter_3_fr }}</a>
+
+              <a class="nav-link has_lang" lang="en" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
                 aria-controls="v-pills-4" aria-selected="false">{{ .Params.menu_filter_4 }}</a>
+ 
+              <a class="nav-link has_lang" lang="fr" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+                aria-controls="v-pills-4" aria-selected="false">{{ .Params.menu_filter_4_fr }}</a>
             </div>
           </div>
           <div class="col-md-12 d-flex align-items-center">
@@ -249,9 +282,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.pizza_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.pizza_content }}</p>
-                        <p class="price"><span>{{ .Params.pizza_price }}</span></p>
+                        <h3 class=" has_lang" lang="en" ><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class=" has_lang" lang="fr" ><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class=" has_lang" lang="en">{{ .Params.pizza_content }}</p>
+                        <p class=" has_lang" lang="fr">{{ .Params.pizza_content_fr }}</p>
+                        <p class="price  has_lang" lang="en"><span>{{ .Params.pizza_price }}</span></p>
+                        <p class="price  has_lang" lang="fr"><span>{{ .Params.pizza_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -268,9 +304,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.drink_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.drink_content }}</p>
-                        <p class="price"><span>{{ .Params.drink_price }}</span></p>
+                        <h3 class=" has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class=" has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class=" has_lang" lang="en">{{ .Params.drink_content }}</p>
+                        <p class=" has_lang" lang="fr">{{ .Params.drink_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.drink_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.drink_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -287,9 +326,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.burger_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.burger_content }}</p>
-                        <p class="price"><span>{{ .Params.burger_price }}</span></p>
+                        <h3 class=" has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class=" has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class=" has_lang" lang="en">{{ .Params.burger_content }}</p>
+                        <p class=" has_lang" lang="fr">{{ .Params.burger_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.burger_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.burger_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -306,9 +348,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.pasta_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.pasta_content }}</p>
-                        <p class="price"><span>{{ .Params.pasta_price }}</span></p>
+                        <h3 class=" has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class=" has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class=" has_lang" lang="en">{{ .Params.pasta_content }}</p>
+                        <p class=" has_lang" lang="fr">{{ .Params.pasta_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.pasta_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.pasta_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -328,8 +373,10 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.blog_title_home }}</h2>
-        <p>{{ .Params.blog_content_home }}</p>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.blog_title_home }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.blog_title_home_fr }}</h2>
+        <p class="has_lang" lang="en">{{ .Params.blog_content_home }}</p>
+        <p class="has_lang" lang="fr">{{ .Params.blog_content_home_fr }}</p>
       </div>
     </div>
     <div class="row d-flex">
@@ -340,12 +387,15 @@
           </a>
           <div class="text py-4 d-block">
               <div class="meta">
-              <div><a href="#">{{ .Params.blog_date }}</a></div>
+              <div><a class="has_lang" lang="en" href="#">{{ .Params.blog_date }}</a></div>
+              <div><a class="has_lang" lang="fr" href="#">{{ .Params.blog_date_fr }}</a></div>
               <div><a href="#">Admin</a></div>
               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
             </div>
-            <h3 class="heading mt-2"><a href="#">{{ .Params.blog_title }}</a></h3>
-            <p>{{ .Params.blog_summary }}</p>
+            <h3 class="heading mt-2 has_lang" lang="en"><a href="#">{{ .Params.blog_title }}</a></h3>
+            <h3 class="heading mt-2 has_lang" lang="fr"><a href="#">{{ .Params.blog_title_fr }}</a></h3>
+            <p class="has_lang" lang="en">{{ .Params.blog_summary }}</p>
+            <p class="has_lang" lang="en">{{ .Params.blog_summary_fr }}</p>
           </div>
         </div>
       </div>
@@ -386,5 +436,4 @@
     </div>
   </div>
 </section>
-
 {{ end }}

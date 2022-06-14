@@ -7,7 +7,8 @@
             <h2 class="mb-4">Welcome to<span class="flaticon-pizza">Pizza</span> A Restaurant</h2>
         </div>
         <div>
-            <p>{{ .Params.about_content }}</p>
+            <p class="has_lang" lang="en">{{ .Params.about_content }}</p>
+            <p class="has_lang" lang="fr">{{ .Params.about_content_fr }}</p>
         </div>
     </div>
 </section>
@@ -16,9 +17,11 @@
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
-                <h2 class="mb-4">{{ .Params.our_chef_title }}</h2>
+                <h2 class="mb-4 has_lang" lang="en">{{ .Params.our_chef_title }}</h2>
+                <h2 class="mb-4 has_lang" lang="fr">{{ .Params.our_chef_title_fr }}</h2>
                 <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-                <p class="mt-5">{{ .Params.our_chef_content }}</p>
+                <p class="mt-5 has_lang" lang="en">{{ .Params.our_chef_content }}</p>
+                <p class="mt-5 has_lang" lang="fr">{{ .Params.our_chef_content_fr }}</p>
             </div>
         </div>
         <div class="row">
@@ -27,10 +30,13 @@
                 <div class="staff">
                     <div class="img mb-4" style="background-image: url('{{ .Params.chef_image_url}}');"></div>
                     <div class="info text-center">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <span class="position">{{ .Params.chef_profile }}</span>
+                        <h3 class="has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class="has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <span class="position has_lang" lang="en">{{ .Params.chef_profile }}</span>
+                        <span class="position has_lang" lang="fr">{{ .Params.chef_profile_fr }}</span>
                         <div class="text">
-                            <p>{{ .Params.chef_content }}</p>
+                            <p class="has_lang" lang="en">{{ .Params.chef_content }}</p>
+                            <p class="has_lang" lang="fr">{{ .Params.chef_content_fr }}</p>
                         </div>
                     </div>
                 </div>

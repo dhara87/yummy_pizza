@@ -4,8 +4,10 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
-        <h2 class="mb-4">{{ .Params.menu_heading }}</h2>
-        <p>{{ .Params.menu_content }}</p>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.menu_heading }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.menu_heading_fr }}</h2>
+        <p class="has_lang" lang="en">{{ .Params.menu_content }}</p>
+        <p class="has_lang" lang="fr">{{ .Params.menu_content_fr }}</p>
       </div>
     </div>
   </div>
@@ -16,9 +18,13 @@
         <div class="services-wrap d-flex">
           <a href="#" class="img order-lg-last" style="background-image: url('{{ .Params.pizza_image_url}}');"></a>
           <div class="text p-4">
-            <h3>{{ .Params.title }}</h3>
-            <p>{{ .Params.pizza_content }} </p>
-            <p class="price"><span>{{ .Params.pizza_price }}</span> <a href="#"
+            <h3 class="has_lang" lang="en">{{ .Params.title }}</h3>
+            <h3 class="has_lang" lang="fr">{{ .Params.title_fr }}</h3>
+            <p class="has_lang" lang="en">{{ .Params.pizza_content }} </p>
+            <p class="has_lang" lang="fr">{{ .Params.pizza_content_fr }} </p>
+            <p class="price has_lang" lang="en"><span>{{ .Params.pizza_price }}</span> <a href="#"
+              class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+            <p class="price has_lang" lang="fr"><span>{{ .Params.pizza_price_fr }}</span> <a href="#"
                 class="ml-2 btn btn-white btn-outline-white">Order</a></p>
           </div>
         </div>
@@ -30,9 +36,11 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
       <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">{{ .Params.menu_pricing_title }}</h2>
+        <h2 class="mb-4 has_lang" lang="en">{{ .Params.menu_pricing_title }}</h2>
+        <h2 class="mb-4 has_lang" lang="fr">{{ .Params.menu_pricing_title_fr }}</h2>
         <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-        <p class="mt-5">{{ .Params.menu_pricing_content }}</p>
+        <p class="mt-5 has_lang" lang="en">{{ .Params.menu_pricing_content }}</p>
+        <p class="mt-5 has_lang" lang="fr">{{ .Params.menu_pricing_content_fr }}</p>
       </div>
     </div>
     <div class="row">
@@ -42,11 +50,16 @@
           <div class="img" style="background-image: url('{{ .Params.menu_item_image_url}}');"></div>
           <div class="desc pl-3">
             <div class="d-flex text align-items-center">
-              <h3><span>{{ .Params.title }}</span></h3>
-              <span class="price">{{ .Params.menu_item_price }}</span>
+              <h3 class="has_lang" lang="en"><span>{{ .Params.title }}</span></h3>
+              <h3 class="has_lang" lang="fr"><span>{{ .Params.title_fr }}</span></h3>
+              <span class="price has_lang" lang="en">{{ .Params.menu_item_price }}</span>
+              <span class="price has_lang" lang="fr">{{ .Params.menu_item_price_fr }}</span>
             </div>
-            <div class="d-block">
+            <div class="d-block has_lang" lang="en">
               <p>{{ .Params.menu_item_content }}</p>
+            </div>
+            <div class="d-block has_lang" lang="fr">
+              <p>{{ .Params.menu_item_content_fr }}</p>
             </div>
           </div>
         </div>
@@ -67,17 +80,30 @@
         <div class="row">
           <div class="col-md-12 nav-link-wrap mb-5">
             <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+              <a class="nav-link active has_lang" lang="en" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
                 aria-controls="v-pills-1" aria-selected="true">{{ .Params.menu_filter_1 }}</a>
+              
+              <a class="nav-link active has_lang" lang="fr" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+                aria-controls="v-pills-1" aria-selected="true">{{ .Params.menu_filter_1_fr }}</a>
 
-              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+              <a class="nav-link has_lang" lang="en" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
                 aria-controls="v-pills-2" aria-selected="false">{{ .Params.menu_filter_2 }}</a>
+            
+              <a class="nav-link has_lang" lang="fr" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                aria-controls="v-pills-2" aria-selected="false">{{ .Params.menu_filter_2_fr }}</a>
 
-              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+              <a class="nav-link has_lang" lang="en" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
                 aria-controls="v-pills-3" aria-selected="false">{{ .Params.menu_filter_3 }}</a>
+          
+              <a class="nav-link has_lang" lang="fr" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+                aria-controls="v-pills-3" aria-selected="false">{{ .Params.menu_filter_3_fr }}</a>
 
-              <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+              <a class="nav-link has_lang" lang="en" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
                 aria-controls="v-pills-4" aria-selected="false">{{ .Params.menu_filter_4 }}</a>
+           
+             <a class="nav-link has_lang" lang="fr" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+                aria-controls="v-pills-4" aria-selected="false">{{ .Params.menu_filter_4_fr }}</a>
+
             </div>
           </div>
           <div class="col-md-12 d-flex align-items-center">
@@ -92,9 +118,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.pizza_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.pizza_content }}</p>
-                        <p class="price"><span>{{ .Params.pizza_price }}</span></p>
+                        <h3 class="has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class="has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class="has_lang" lang="en">{{ .Params.pizza_content }}</p>
+                        <p class="has_lang" lang="fr">{{ .Params.pizza_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.pizza_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.pizza_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -111,9 +140,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.drink_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.drink_content }}</p>
-                        <p class="price"><span>{{ .Params.drink_price }}</span></p>
+                        <h3 class="has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class="has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class="has_lang" lang="en">{{ .Params.drink_content }}</p>
+                        <p class="has_lang" lang="fr">{{ .Params.drink_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.drink_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.drink_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -124,15 +156,18 @@
 
               <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
                 <div class="row">
-                  {{ range where .Site.Pages "Type" "burger"  }}
+                  {{ range where .Site.Pages "Type" "burger" }}
                   <div class="col-md-4 text-center">
                     <div class="menu-wrap">
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.burger_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.burger_content }}</p>
-                        <p class="price"><span>{{ .Params.burger_price }}</span></p>
+                        <h3 class="has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class="has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class="has_lang" lang="en">{{ .Params.burger_content }}</p>
+                        <p class="has_lang" lang="fr">{{ .Params.burger_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.burger_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.burger_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -149,9 +184,12 @@
                       <a href="#" class="menu-img img mb-4"
                         style="background-image: url('{{ .Params.pasta_image}}');"></a>
                       <div class="text">
-                        <h3><a href="#">{{ .Params.title }}</a></h3>
-                        <p>{{ .Params.pasta_content }}</p>
-                        <p class="price"><span>{{ .Params.pasta_price }}</span></p>
+                        <h3 class="has_lang" lang="en"><a href="#">{{ .Params.title }}</a></h3>
+                        <h3 class="has_lang" lang="fr"><a href="#">{{ .Params.title_fr }}</a></h3>
+                        <p class="has_lang" lang="en">{{ .Params.pasta_content }}</p>
+                        <p class="has_lang" lang="fr">{{ .Params.pasta_content_fr }}</p>
+                        <p class="price has_lang" lang="en"><span>{{ .Params.pasta_price }}</span></p>
+                        <p class="price has_lang" lang="fr"><span>{{ .Params.pasta_price_fr }}</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
                       </div>
                     </div>
@@ -166,7 +204,6 @@
     </div>
   </div>
 </section>
-
 
 
 {{ end }}
