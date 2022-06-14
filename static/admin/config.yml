@@ -1,30 +1,20 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: "/images"
+media_folder: "static/images"
 collections:
   - name: "Header" 
     label: "Header"
-    folder: "content"
+    folder: "content/header"
     create: false
     fields:
-      - { label: "Header Title", name: "header_title", widget: "string" }
-      - { label: "Header Home", name: "header_home", widget: "string" }
-      - { label: "Header Home French", name: "header_home_fr", widget: "string" }
-      - { label: "Header Menu", name: "header_menu", widget: "string" }
-      - { label: "Header Menu French", name: "header_menu_fr", widget: "string" }
-      - { label: "Header Service", name: "header_services", widget: "string" }
-      - { label: "Header Service French", name: "header_services_fr", widget: "string" }
-      - { label: "Header Blog", name: "header_blog", widget: "string" }
-      - { label: "Header Blog French", name: "header_blog_fr", widget: "string" }
-      - { label: "Header About", name: "header_about", widget: "string" }
-      - { label: "Header About French", name: "header_about_fr", widget: "string" }
-      - { label: "Header Contact", name: "header_contact", widget: "string" }
-      - { label: "Header Contact French", name: "header_contact_fr", widget: "string" }
+      - { label: "Header Title", name: "title", widget: "string" }
+      - { label: "Header Name", name: "header_name", widget: "string" }
+      - { label: "Header Name French", name: "header_name_fr", widget: "string" }
   
   - name: "Footer" 
     label: "Footer"
-    folder: "content"
+    folder: "content/footer"
     create: false
     fields:
       - { label: "Footer Title", name: "footer_title", widget: "string" }
@@ -118,9 +108,9 @@ collections:
       - { label: "French Chef Content", name: "chef_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
-  - name: "Blogs" 
-    label: "Blogs"
-    folder: "content/blogs"
+  - name: "Blog" 
+    label: "Blog"
+    folder: "content/blog"
     create: true
     fields:
       - { label: "Blog Title", name: "title", widget: "string" }
@@ -287,7 +277,8 @@ collections:
       - { label: "French Service Description", name: "service_content_fr", widget: "text" }
       - { label: "Type", name: "type", widget: "string" }
 
- 
+  
+   
   
   
   

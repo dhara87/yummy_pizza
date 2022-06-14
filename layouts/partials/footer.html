@@ -1,3 +1,4 @@
+{{ range first 1 (where .Site.Pages "Type" "footer") }}
 <footer class="ftco-footer ftco-section img">
   <div class="overlay"></div>
   <div class="container">
@@ -109,7 +110,6 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <p class="has_lang" lang="en">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright &copy;
           <script>
             document.write(new Date().getFullYear());
@@ -117,10 +117,8 @@
           All rights reserved | This template is made with
           <i class="icon-heart" aria-hidden="true"></i> by
           <a href="https://colorlib.com" target="_blank">Colorlib</a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
         <p class="has_lang" lang="fr">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           French Copyright &copy;
           <script>
             document.write(new Date().getFullYear());
@@ -128,12 +126,14 @@
           All rights reserved | This template is made with
           <i class="icon-heart" aria-hidden="true"></i> by
           <a href="https://colorlib.com" target="_blank">Colorlib</a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
       </div>
     </div>
   </div>
 </footer>
+{{end}}
+
+
 {{ "<!-- JS Plugins -->" | safeHTML }} {{ range .Site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
 {{ end }}

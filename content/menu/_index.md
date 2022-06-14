@@ -16,11 +16,14 @@ menu_pricing_title_fr: "French Our Menu Pricing"
 menu_pricing_content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia "
 menu_pricing_content_fr: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia "
 menu_image_url: "/images/about.jpg"
-menu_filter_1: "Pizza"
-menu_filter_1_fr: "F Pizza"
-menu_filter_2_fr: "F Drinks"
-menu_filter_3_fr: "F Burgers"
-menu_filter_4_fr: "F Pasta"
+menu_filter_1: Pizza
+menu_filter_1_fr: F Pizza
+menu_filter_2_fr: F Drinks
+menu_filter_2: Drinks
+menu_filter_3: Burgers
+menu_filter_3_fr: F Burgers
+menu_filter_4: Pasta
+menu_filter_4_fr: F Pasta
 draft: false
 layout: "menu"
 ---
