@@ -1,7 +1,7 @@
 ---
 title: "5About "
-header_name: About us
-header_name_fr: FAbout us
+header_name: About
+header_name_fr: FAbout
 link: /about
 type: header
 ---
