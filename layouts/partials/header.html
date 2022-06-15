@@ -5,63 +5,7 @@
 			<span class="oi oi-menu"></span> Menu
 		  </button>
 
-<!-- 
-	  <div class="collapse navbar-collapse" id="ftco-nav">
-		<ul class="navbar-nav ml-auto">
-			{{- $currentPage := . -}}
-			{{ range .Site.Menus.main -}}
-			<li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} has_lang" lang="en">
-				<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-			{{- end }}
-		</ul>
-	  </div> -->
 
-	  <!-- <div class="collapse navbar-collapse" id="ftco-nav">
-		<ul class="navbar-nav ml-auto">
-			<li class="main has_lang" lang="en">
-				<a href="/">{{ .Params.header_home}}</a>
-			</li>&nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/">{{ .Params.header_home_fr}}</a>
-			</li>&nbsp; &nbsp; &nbsp;
-
-			<li class="main has_lang" lang="en">
-				<a href="/menu">{{ .Params.header_menu}}</a>
-			</li>&nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/menu">{{ .Params.header_menu_fr}}</a>
-			</li>&nbsp; &nbsp; &nbsp;
-
-			<li class="main has_lang" lang="en">
-				<a href="/services">{{ .Params.header_services}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/services">{{ .Params.header_services_fr}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-
-			<li class="main has_lang" lang="en">
-				<a href="/blogs">{{ .Params.header_blog}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/blogs">{{ .Params.header_blog_fr}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-
-			<li class="main has_lang" lang="en">
-				<a href="/about">{{ .Params.header_about}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/about">{{ .Params.header_about_fr}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-
-			<li class="main has_lang" lang="en">
-				<a href="/contact">{{ .Params.header_contact}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-			<li class="main has_lang" lang="fr">
-				<a href="/contact">{{ .Params.header_contact_fr}}</a>
-			</li> &nbsp; &nbsp; &nbsp;
-		</ul>
-	  </div> -->
 	  <div class="collapse navbar-collapse" id="ftco-nav">
 		<ul class="navbar-nav ml-auto">
 			{{ range where .Site.Pages "Type" "header" }}
@@ -69,7 +13,7 @@
 				<a href="{{ .Params.link}}">{{ .Params.header_name}}</a>
 			</li>&nbsp; &nbsp; &nbsp;
 			<li class="main has_lang" lang="fr">
-				<a href="/">{{ .Params.header_name_fr}}</a>
+				<a href="{{ .Params.link}}">{{ .Params.header_name_fr}}</a>
 			</li>&nbsp; &nbsp; &nbsp;
 				{{end}}
 		</ul>
@@ -83,19 +27,17 @@
 		{{ end }}
 		</ul> -->
 	 
-		<ul>
-		<li onclick="changeLanguage('en')"><a>en</a></li>
-		<li onclick="changeLanguage('fr')"><a>fr</a></li>
-		</ul>
 		
+		<span style="margin-bottom: 5px;" onclick="changeLanguage('en')"><a>en</a></span> &nbsp; &nbsp;
 		<label class="switch">
 			<!-- <span class="enLang">en</span> -->
 			<input type="checkbox" id="langCheckBox" onclick="changeLanguage()">
 			<span class="slider round"></span>
 			<!-- <span class="frLang">fr</span> -->
-		  </label>
-
-	</nav>
+		  </label> &nbsp; &nbsp;
+		<span style="margin-bottom: 5px;" onclick="changeLanguage('fr')"><a>fr</a></span> &nbsp; &nbsp;
+	
+</nav>
 
 <script>
 	function changeLanguage(e) {
