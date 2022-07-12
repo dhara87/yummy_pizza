@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
+  <div id="search"></div>
   {{ range where .Site.Pages "Type" "slider"  }}
   <div class="slider-item">
     <div class="overlay"></div>

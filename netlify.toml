@@ -4,4 +4,9 @@
   
 [build.environment]
    HUGO_VERSION = "0.92.1"
-   
+
+[[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+  [plugins.inputs]
+  branches = ['main', 'master']
+  
